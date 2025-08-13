@@ -66,3 +66,20 @@ form input{
     font-family: inherit;
     font-size: 28px;
 }
+
+.response{
+    width: 100%;
+    background-color: var(--white);
+    padding: 32px;
+    padding-bottom: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.response h4{
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
+}

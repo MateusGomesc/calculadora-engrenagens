@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/inputs.css">
+</head>
+<body>
+    <header>
+        <img src="../images/icon_engrenagens.svg" alt="Ícone de engrenagens">
+        <h1>Calculadora de engrenagens</h1>
+    </header>
+
+    <main>
+        <h2>Cálculo de Sementes</h2>
+    </main>
+    <form action="">
+        <div class="inputContainer">
+            <label for="quantPerHole">Sementes por furo:</label>
+            <input type="number" id="quantPerHole" name="quantPerHole" class="input " placeholder="0.00">
+        </div>
+        <div class="inputContainer">
+            <label for="hole">Quantidade de furos:</label>
+            <input type="number" id="hole" name="hole" class="input " placeholder="0">
+        </div>
+        <div class="inputContainer">
+            <label for="seedsPerMeter">Quantidade de sementes por metro linear:</label>
+            <input type="number" id="seedsPerMeter" name="seedsPerMeter" class="input " placeholder="0">
+        </div>
+        <btn class="btn" id="btnSave">
+            <p>Calcular</p>
+        </btn>
+    </form>
+
+    <div class="response">
+        <h4>Resultado</h4>
+    </div>
+
+    <footer>
+        <p>Feito por <a href="">Mateus Gomes Costa</a></p>
+    </footer>
+</body>
+</html>
