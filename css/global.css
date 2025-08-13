@@ -1,8 +1,8 @@
 :root{
     --white: #fff;
     --black: #1e1e1e;
-    --black-green: #2C6B2F;
-    --light-green: #22C55E;
+    --light-green: #2c6d30;
+    --black-green: #203529;
     --light-blue: #3B82F6;
 }
 
@@ -14,7 +14,7 @@
 }
 
 body{
-    background-image: url("../images/fundo1.jpg");
+    background-image: url("../images/fundo.jpg");
     background-repeat: no-repeat;
     background-position: 70%;
     height: 100vh;
@@ -49,7 +49,6 @@ header img{
 }
 
 footer{
-    position: fixed;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -71,4 +70,18 @@ footer p a{
     text-decoration: underline;
     color: inherit;
     cursor: pointer;
+}
+
+main{
+    margin: 50px 32px;
+}
+
+h2{
+    font-family: inherit;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--white);
 }
