@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calibragem de adubo</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/inputs.css">
+</head>
+<body>
+    <header>
+        <img src="../images/icon_engrenagens.svg" alt="Ícone de engrenagens">
+        <h1>Calculadora de engrenagens</h1>
+    </header>
+
+    <main>
+        <h2 id="title">Calibragem de adubo</h2>
+    </main>
+    
+    <form id="calibrateForm">
+        <div class="twoColumns">
+            <div class="inputContainer">
+                <label for="motora" class="textCenter">Motora</label>
+                <input type="number" id="motora" name="motora" class="textCenter" placeholder="0" required>
+            </div>
+            <div class="inputContainer">
+                <label for="movida"  class="textCenter">Movida</label>
+                <input type="number" id="movida" name="movida" class="textCenter" placeholder="0" required>
+            </div>
+        </div>
+        <div class="twoColumns">
+            <div class="inputContainer">
+                <label for="spring" class="textCenter">Condutora</label>
+                <select name="spring" id="spring" class="textCenter">
+                    <option value="2" selected>2'' (50,8 mm)</option>
+                    <option value="1">1'' (25,4 mm)</option>
+                </select>
+            </div>
+            <div class="inputContainer">
+                <label for="space" class="textCenter">Espaçamento (mm)</label>
+                <input type="number" id="space" name="space" class="textCenter" placeholder="0" required>
+            </div>
+        </div>
+        <div class="inputContainer">
+            <label for="realFert">Qual a quantidade de adubo que caiu? (50m)</label>
+            <input type="number" id="realFert" name="realFert" placeholder="0" required>
+        </div>
+        <button class="btn" id="btnSave" type="submit">
+            <p>Calibrar</p>
+        </button>
+    </form>
+
+    <footer>
+        <p>Feito por <a href="">Mateus Gomes Costa</a></p>
+    </footer>
+    
+    <script src="../js/calibrateFert.js"></script>
+    <script src="../js/fertTable.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/initialConfig.js"></script>
+</body>
+</html>
