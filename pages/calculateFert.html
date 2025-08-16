@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Calculadora de adubo</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/inputs.css">
 </head>
@@ -16,10 +16,13 @@
     <main>
         <h2>Cálculo de Adubo</h2>
     </main>
-    <form action="">
+    <form id="calculateForm">
         <div class="inputContainer">
-            <label for="quantPerHole">Condutora:</label>
-            <input type="number" id="quantPerHole" name="quantPerHole" class="input " placeholder="0.00">
+            <label for="spring">Condutora</label>
+            <select name="spring" id="spring">
+                <option value="2" selected>2'' (50,8 mm)</option>
+                <option value="1">1'' (25,4 mm)</option>
+            </select>
         </div>
         <div class="inputContainer">
             <label for="space">Espaçamento entre linhas:</label>
@@ -29,18 +32,25 @@
             <label for="fertPerMeter">Gramas em 50 metros por linha:</label>
             <input type="number" id="fertPerMeter" name="fertPerMeter" class="input " placeholder="0">
         </div>
-        <btn class="btn" id="btnSave">
+        <button class="btn" id="btnSave">
             <p>Calcular</p>
-        </btn>
+        </button>
     </form>
 
     <div class="response">
         <h4>Resultado</h4>
+        <div class="info">
+            <span id="settingValue"></span>
+            <span id="spaceProx"></span>
+        </div>
+        <div class="resultContainer" id="resultContainer"></div>
     </div>
 
     <footer>
         <p>Feito por <a href="">Mateus Gomes Costa</a></p>
     </footer>
     <script src="../js/initialConfig.js"></script>
+    <script src="../js/fertTable.js"></script>
+    <script src="../js/calculateFert.js"></script>
 </body>
 </html>

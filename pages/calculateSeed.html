@@ -16,31 +16,38 @@
     <main>
         <h2>Cálculo de Sementes</h2>
     </main>
-    <form action="">
+    <form id="calculateForm">
         <div class="inputContainer">
-            <label for="quantPerHole">Sementes por furo:</label>
-            <input type="number" id="quantPerHole" name="quantPerHole" class="input " placeholder="0.00">
+            <label for="seedsPerMeter">Quantidade de sementes (p/ metro linear):</label>
+            <input type="number" id="seedsPerMeter" name="seedsPerMeter" class="input " placeholder="0.00">
         </div>
         <div class="inputContainer">
             <label for="hole">Quantidade de furos:</label>
             <input type="number" id="hole" name="hole" class="input " placeholder="0">
         </div>
         <div class="inputContainer">
-            <label for="seedsPerMeter">Quantidade de sementes por metro linear:</label>
-            <input type="number" id="seedsPerMeter" name="seedsPerMeter" class="input " placeholder="0">
+            <label for="quantPerHole">Sementes por furo:</label>
+            <input type="number" id="quantPerHole" name="quantPerHole" class="input " placeholder="0">
         </div>
-        <btn class="btn" id="btnSave">
+        <button class="btn" id="btnSave" type="submit">
             <p>Calcular</p>
-        </btn>
+        </button>
     </form>
 
     <div class="response">
         <h4>Resultado</h4>
+        <div class="info">
+            <span id="settingValue"></span>
+            <span id="spaceProx"></span>
+        </div>
+        <div class="resultContainer" id="resultContainer"></div>
     </div>
 
     <footer>
         <p>Feito por <a href="">Mateus Gomes Costa</a></p>
     </footer>
     <script src="../js/initialConfig.js"></script>
+    <script src="../js/seedsTable.js"></script>
+    <script src="../js/calculateSeed.js"></script>
 </body>
 </html>

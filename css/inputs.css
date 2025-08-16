@@ -83,3 +83,27 @@ form input, form select{
     font-size: 24px;
     font-weight: bold;
 }
+
+.response .info{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.response .info span{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.resultContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.resultContainer span{
+    font-size: 24px;
+}
